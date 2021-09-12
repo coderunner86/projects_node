@@ -1,0 +1,26 @@
+{
+  "name": "projects_node",
+  "version": "0.0.1",
+  "description": "Tablas de multiplicar",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "number3": "node app --number=3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderunner86/projects_node.git"
+  },
+  "author": "Jhesus Legarda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coderunner86/projects_node/issues"
+  },
+  "homepage": "https://github.com/coderunner86/projects_node#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
