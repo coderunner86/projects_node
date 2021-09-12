@@ -1,0 +1,17 @@
+{
+  "name": "seccion-4",
+  "version": "0.0.1",
+  "description": "Simple tabla de multiplicar",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "number5": "node app --number=5"
+  },
+  "author": "Jhesus Legarda",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "nodemon": "^2.0.12",
+    "yargs": "^17.1.1"
+  }
+}
