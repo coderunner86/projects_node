@@ -1,16 +1,15 @@
 const { cyan } = require('colors');
 const fs = require('fs');
 require('colors');
-const crearFile = ( number, listar =    false ) => {
+const crearFile = ( number, listar =    false, limite = 10 ) => {
     return new Promise((resolve, reject) => {
        
         
         let salida = '';
-        for (let i = 1; i <11; i++) {
+        for (let i = 1; i <=limite; i++) {
             salida += `${number} x ${i} = ${ number * i}\n`
             //console.log(`${number} x ${i}=`,number*i)    
         }
-
         if (listar) {
             console.log('***********************'.green);
             console.log('Tabla del: '.blue, number);

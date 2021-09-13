@@ -17,6 +17,12 @@ const argv = require('yargs')
                 default: false,
                 describe: 'Listar los valores de la tabla de multiplicar en consola'  
             })
+            .option('h',{
+                alias: 'limite', 
+                type: 'number',
+                default: 10,
+                describe: 'limite numérico hasta el que se va a calcular'
+            })
             .argv;
 
 module.exports = argv;

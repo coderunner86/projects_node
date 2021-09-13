@@ -11,7 +11,7 @@ console.clear();
 //const [ , number] = arg3.split('=');
 //console.log( number );
 
-crearFile ( argv.n, argv.l )
+crearFile ( argv.n, argv.l, argv.h )
     .then(crearFile => console.log(crearFile.rainbow,`Promise response:`.magenta, `Created`.green))
     .catch(err => console.log(err, 'Failed to create'.red));
 
