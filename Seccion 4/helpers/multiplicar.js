@@ -1,5 +1,6 @@
+const { cyan } = require('colors');
 const fs = require('fs');
-
+require('colors');
 const crearFile = ( number, listar =    false ) => {
     return new Promise((resolve, reject) => {
        
@@ -11,15 +12,15 @@ const crearFile = ( number, listar =    false ) => {
         }
 
         if (listar) {
-            console.log('***********************');
-            console.log('Tabla del: ', number);
-            console.log('***********************');
+            console.log('***********************'.green);
+            console.log('Tabla del: '.blue, number);
+            console.log('***********************'.green);
             (salida)
             ?resolve(salida)
             :reject(`No ha sido posible para el número dado`);
         }
-        fs.writeFileSync( `./resultados/tabla-${number}.txt`, salida);
-        console.log(`El archivo tabla-${number}.txt ha sido creado. Ver carpeta de resultados.`);
+        fs.writeFileSync( `./resultados/tabla-del-${number}.txt`, salida);
+        console.log(`El archivo`.cyan, `tabla-del-${number}.txt`.red, `ha sido creado`.cyan, `Ver carpeta de resultados.`.yellow);
     });
 }
 

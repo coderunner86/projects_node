@@ -1,5 +1,6 @@
 const {crearFile} = require('./helpers/multiplicar');
 const argv = require('./config/yargs');
+const colors = require('colors');
 
 console.clear();
 //console.log(process.argv);
@@ -11,8 +12,8 @@ console.clear();
 //console.log( number );
 
 crearFile ( argv.n, argv.l )
-    .then(crearFile => console.log(crearFile,'Promise response: Created'))
-    .catch(err => console.log(err, 'Failed to create'));
+    .then(crearFile => console.log(crearFile.rainbow,`Promise response:`.magenta, `Created`.green))
+    .catch(err => console.log(err, 'Failed to create'.red));
 
     //fs.writeFile( `tabla-${number}.txt`, salida, (err) => {
 //if (err) throw err;
