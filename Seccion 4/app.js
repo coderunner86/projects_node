@@ -1,27 +1,9 @@
-
-//const { argv } = require('yargs');
 const {crearFile} = require('./helpers/multiplicar');
-const argv = require('yargs')
-            .option('n',{
-                alias: 'numero', 
-                type: 'number', 
-                demandOption: true 
-            })
-            .check((argv, options) => {
-                if ( isNaN(argv.n)){
-                    throw 'Error: Solo se pueden ingresar números'
-                }
-                return true;
-            })
-            .option('l', {
-                alias: 'listar', 
-                type: 'boolean',
-                default: false  
-            })
-            .argv;
+const argv = require('./config/yargs');
+
 console.clear();
 //console.log(process.argv);
-console.log(argv);
+//console.log(argv);
 //console.log('number: yargs', argv.n);
 //console.log('number: yargs', argv.number);
 //const [ , , arg3 = 'number=5'] = process.argv;
